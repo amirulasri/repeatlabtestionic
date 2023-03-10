@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'influcauses',
+    loadChildren: () => import('./influcauses/influcauses.module').then( m => m.InflucausesPageModule)
+  },
+  {
+    path: 'diagnosis',
+    loadChildren: () => import('./diagnosis/diagnosis.module').then( m => m.DiagnosisPageModule)
+  },
+  {
+    path: 'treatment',
+    loadChildren: () => import('./treatment/treatment.module').then( m => m.TreatmentPageModule)
+  },
 ];
 
 @NgModule({
