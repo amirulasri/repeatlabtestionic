@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'treatment',
     loadChildren: () => import('./treatment/treatment.module').then( m => m.TreatmentPageModule)
+  },  {
+    path: 'gallery',
+    loadChildren: () => import('./gallery/gallery.module').then( m => m.GalleryPageModule)
   },
+
 ];
 
 @NgModule({
