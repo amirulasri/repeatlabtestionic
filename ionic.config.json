@@ -1,0 +1,7 @@
+{
+  "name": "repeatlabtest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
